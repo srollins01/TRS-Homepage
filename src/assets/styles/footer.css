@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0A0707;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  border-image: url(/wood-border.png) 30 fill / 19px 0 0 0;
+  border-image-repeat: repeat;
+  color: #BE8C4C;
+}

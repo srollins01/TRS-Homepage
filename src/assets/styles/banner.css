@@ -1,5 +1,6 @@
 .banner {
   background: linear-gradient(#00000081, #000000b3), url(/quest-group-bnr.png);
+  background-size: cover;
   height: 90vh;
   text-align: center;
   display: flex;
