@@ -5,13 +5,13 @@ function Navbar() {
         <img src="/trs-icon.png" height="70" width="70" alt="trs home icon"/>
       </a>
       <div className="nav-text">
-        <a target="_blank" href="https://github.com/srollins01">
+        <a href="#about-us">
           <p>About Us</p>
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/sarah-rollins-sr/">
+        <a href="#events">
           <p>Events</p>
         </a>
-        <a target="_blank" href="mailto:s.rollins751@gmail.com">
+        <a href="#footer">
           <p>Contact</p>
         </a>
       </div>
