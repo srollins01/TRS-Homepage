@@ -1,5 +1,8 @@
 import SimpleImageSlider from "react-simple-image-slider";
 import Card from './Card'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const images = [
   { url: "/titans.jpg" },
@@ -9,12 +12,16 @@ const images = [
 
 
 function Container() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className="container">
 
       <section id="about-us">
         <div>
-          <div className="slideshow">
+          <div className="slideshow" data-aos="fade-up">
             <SimpleImageSlider
             width={400}
             height={250}
@@ -52,7 +59,7 @@ function Container() {
               and refreshments, Otsuka Game Day embodies the spirit of communal gaming.
             </p>
           </div>
-          <img src="/quest-group-clear.png" alt="dnd team"/>
+          <img src="/quest-group-clear.png" alt="dnd team" data-aos="fade-up"/>
         </div>
       </section>
 

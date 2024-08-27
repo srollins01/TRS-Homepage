@@ -1,6 +1,6 @@
 function Card() {
   return (
-    <div className="card">
+    <div className="card" data-aos="fade-up">
       <h2>Event 1</h2>
       <div className="vert-row">
         <img src="/game-day-card.png" />
