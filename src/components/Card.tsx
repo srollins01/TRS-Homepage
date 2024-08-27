@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Card() {
   return (
     <>
-      <div className="card" data-aos="fade-up">
+      <div className="card">
         <h2>Event 1</h2>
         <div className="row">
           <img src="/game-day-card.png" />
