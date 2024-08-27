@@ -1,0 +1,35 @@
+.card {
+  background-color: #BE8C4C;
+  padding: 20px;
+  border-image: url(/wood-border-rnd.png) 30 / 19px;
+  border-radius: 19px;
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.card p {
+  padding: 5px;
+  margin: 0px;
+}
+
+.card .lpad > p {
+  padding: 0 0 0 5px !important;
+  margin: 0px !important;
+}
+
+.card img {
+  height: 150px;
+  width: 250px;
+}
+
+.card > div {
+  text-align: left;
+  align-items: center;
+}
+
+.card > div > div {
+  padding: 10px;
+}

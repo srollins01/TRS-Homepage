@@ -1,4 +1,5 @@
 import SimpleImageSlider from "react-simple-image-slider";
+import Card from './Card'
 
 const images = [
   { url: "/titans.jpg" },
@@ -58,6 +59,7 @@ function Container() {
       <section id="events">
         <h1><strong><em>Upcoming Events</em></strong></h1>
         <div>
+          <Card />
         </div>
       </section>
     </div>
