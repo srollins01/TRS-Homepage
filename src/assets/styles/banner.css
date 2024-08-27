@@ -41,3 +41,17 @@
   box-shadow: rgba(211, 177, 118, 0.561) 0px 0px 20px;
   transition: all 0.1s ease 0s;
 }
+
+.banner a {
+  margin: 10px
+}
+
+.banner div {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .btn-red {
+  background: linear-gradient(92.88deg,rgb(62, 17, 17), rgb(91, 34, 23));
+  transition: all 0.5s ease 0s;
+}

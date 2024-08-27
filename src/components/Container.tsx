@@ -1,10 +1,30 @@
+import SimpleImageSlider from "react-simple-image-slider";
+
+const images = [
+  { url: "/titans.jpg" },
+  { url: "/group-pic1.jpg" },
+  { url: "/group-pic2.jpg" },
+];
+
+
 function Container() {
   return (
     <div className="container">
 
       <section id="about-us">
         <div>
-          <img src="/quest-group-clear.png" alt="dnd team"/>
+          <div className="slideshow">
+            <SimpleImageSlider
+            width={400}
+            height={250}
+            images={images}
+            showBullets={true}
+            showNavs={false}
+            autoPlay={true}
+            autoPlayDelay={5}
+            bgColor={"#00000000"}
+            />
+          </div>
           <div>
             <h1>About<strong><em> Tokyo RPG Society</em></strong></h1>
             <p>
@@ -36,7 +56,7 @@ function Container() {
       </section>
 
       <section id="events">
-        <h1>Events</h1>
+        <h1><strong><em>Upcoming Events</em></strong></h1>
         <div>
         </div>
       </section>

@@ -38,3 +38,12 @@ section img {
   height: 300px;
   width: 400px;
 }
+
+.slideshow {
+  padding: 20px;
+}
+
+.rsis-container {
+  border-radius: 5px !important;
+  overflow: hidden;
+}
