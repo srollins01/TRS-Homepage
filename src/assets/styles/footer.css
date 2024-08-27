@@ -1,11 +1,39 @@
 .footer {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   background-color: #0A0707;
   overflow: hidden;
-  width: 100%;
+  max-width: 100%;
   align-items: center;
   border-image: url(/wood-border.png) 30 fill / 19px 0 0 0;
   border-image-repeat: repeat;
   color: #BE8C4C;
+  padding: 20px;
+}
+
+.footer a {
+  padding: 5px 40px;
+}
+
+.footer svg:hover {
+  filter: drop-shadow(0 0 8px #f5e3cc93);
+}
+
+.footer > div {
+  padding: 10px;
+  font-size: 40px;
+}
+
+.footer img {
+  padding-top: 20px;
+}
+
+.footer h2 {
+  font-family: "Kaushan Script", cursive;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #e1a52cd3;
 }

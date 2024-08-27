@@ -1,6 +1,12 @@
+.cardspacing > * {
+ margin: 10px 0;
+}
+
 .container {
   background: url(/beige-bg.jpg);
+  width: 100%;
   background-size: cover;
+  overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: row;

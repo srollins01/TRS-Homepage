@@ -9,6 +9,7 @@
   flex-direction: column;
   text-shadow: 0 0 8px #ffffff8e;
   color: #e7cfb1;
+  overflow: hidden;
 }
 
 .banner h1 {

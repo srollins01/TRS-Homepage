@@ -65,7 +65,8 @@ function Container() {
 
       <section id="events">
         <h1><strong><em>Upcoming Events</em></strong></h1>
-        <div>
+        <div className="col cardspacing">
+          <Card />
           <Card />
         </div>
       </section>
