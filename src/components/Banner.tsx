@@ -7,7 +7,7 @@ function Banner() {
         <a href="https://tavern.tokyorpgsociety.com/" target="_blank">
           <button>Check out our community hub &gt;&gt;</button>
         </a>
-        <a href="https://tavern.tokyorpgsociety.com/" target="_blank">
+        <a href="https://www.meetup.com/rpgtokyo/" target="_blank">
           <button className="btn-red">Join us on Meetup &gt;&gt;</button>
         </a>
       </div>

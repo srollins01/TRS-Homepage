@@ -1,25 +1,44 @@
+import { useEffect, useState } from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Card() {
+interface Props {
+  key: number,
+  event: never
+}
+
+function Card({event}:Props) {
+  const [desc, setDesc] = useState(JSON.stringify(event["description"]));
+  useEffect(() => {
+    const newDesc = desc.replace(/(<([^>]+)>)/gi, "").replace(/\\n/g," ").replace(/Details/, "")
+    if (newDesc.length > 300) {
+      setDesc(newDesc.substring(1, 300).trimEnd() + '...');
+    } else {
+      setDesc(newDesc.substring(1, newDesc.length - 2));
+    }
+  }, []);
+
   return (
     <>
       <div className="card">
-        <h2>Event 1</h2>
+      <div className='sk-meetup-event' data-embed-id='25455614'></div><script src='https://widgets.sociablekit.com/meetup-group-events/widget.js' async defer></script>
+        <h2>{event["name"]}</h2>
         <div className="row">
-          <img src="/game-day-card.png" />
+          <img src={event["image"]} />
           <div className="col">
             <div className="row">
               <FontAwesomeIcon icon={["far", "calendar"]} />
-              <p>2024/08/27</p>
+              <p><strong>{event["start_day"]} {event["start_date"]}</strong></p>
               <FontAwesomeIcon icon={["far", "clock"]} className="lpad"/>
-              <p>3:00pm-4:00pm</p>
+              <p><strong>{event["start_time"]} to {event["end_time"]}</strong></p>
             </div>
             <div className="col desc">
             <div className="row">
               <FontAwesomeIcon icon={["fas", "location-dot"]}/>
-              <p>Tokyo</p>
+              <p>{event["location"]}</p>
             </div>
-            <p>Lorem ipsum dolor sit amet. Ut provident odio et earum dicta id sint ipsa et molestiae iure eos cumque exercitationem est eaque impedit. Ut tempore laborum qui deleniti mollitia non dignissimos fugit qui laborum voluptate ex galisum officia in minima obcaecati. In dolores quis eum delectus voluptatibus a similique esse?</p>
+              <p></p>
+              <p>{desc}</p>
             </div>
           </div>
 

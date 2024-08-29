@@ -1,5 +1,5 @@
+import Events from './Events'
 import SimpleImageSlider from "react-simple-image-slider";
-import Card from './Card'
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -62,14 +62,7 @@ function Container() {
           <img src="/quest-group-clear.png" alt="dnd team" data-aos="fade-up"/>
         </div>
       </section>
-
-      <section id="events">
-        <h1><strong><em>Upcoming Events</em></strong></h1>
-        <div className="col cardspacing">
-          <Card />
-          <Card />
-        </div>
-      </section>
+      <Events />
     </div>
   )
 }
