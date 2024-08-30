@@ -27,10 +27,7 @@ function Events() {
   }
 
   const eventList = events.map((event, index) =>
-     <>
-         <Card key={index} event={event} />
-         <Card key={index} event={event} />
-     </>
+    <Card key={index} event={event} />
   );
 
   return (
