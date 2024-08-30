@@ -27,8 +27,8 @@ function Container() {
         <div>
           <div className="slideshow" data-aos="fade-up">
             <SimpleImageSlider
-            width={400}
-            height={250}
+            width={window.innerWidth > 480 ? 400 : 270}
+            height={window.innerWidth > 480 ? 250 : 190}
             images={images}
             showBullets={true}
             showNavs={false}

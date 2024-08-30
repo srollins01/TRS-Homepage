@@ -4,9 +4,8 @@
 
 .container {
   background: url(/beige-bg.jpg);
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
-  overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -30,6 +29,7 @@
 }
 
 section {
+  max-width: 100%;
   padding: 15px 70px;
   text-align: center;
 }
@@ -53,4 +53,37 @@ section img {
 
 .slideshow {
   padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .container p {
+    font-size: 12px;
+  }
+
+  section img {
+    height: 200px;
+    width: 280px;
+    padding: 0px;
+  }
+
+  .slideshow {
+    padding: 0px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  section {
+    padding: 15px;
+  }
+
+  section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section > div > div {
+    padding: 20px
+  }
 }

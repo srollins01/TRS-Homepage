@@ -1,4 +1,5 @@
 .footer {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -21,6 +22,9 @@
 .footer > div {
   padding: 10px;
   font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .footer h2 {
@@ -41,4 +45,19 @@
 .table {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 480px) {
+  .footer a {
+    margin: 5px 25px;
+  }
+
+  .footer > div {
+    font-size: 35px;
+  }
+
+  .table {
+    width: 35px;
+    height: 35px;
+  }
 }

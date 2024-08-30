@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div className="topnav">
       <a href="#">
-        <img src={trsicon} height="70" width="70" alt="trs home icon"/>
+        <img src={trsicon} className="trs-icon" alt="trs home icon"/>
       </a>
       <div className="nav-text">
         <a href="#about-us">About Us</a>

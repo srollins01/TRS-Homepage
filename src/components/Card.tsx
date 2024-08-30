@@ -23,27 +23,30 @@ function Card({event}:Props) {
   return (
     <>
       <div className="card">
-      <div className='sk-meetup-event' data-embed-id='25455614'></div><script src='https://widgets.sociablekit.com/meetup-group-events/widget.js' async defer></script>
-        <h2>{event["name"]}</h2>
-        <div className="row">
-          <img src={event["image"] || gameday} alt="event image"/>
-          <div className="col">
-            <div className="row">
-              <FontAwesomeIcon icon={["far", "calendar"]} />
-              <p><strong>{event["start_day"]} {event["start_date"]}</strong></p>
-              <FontAwesomeIcon icon={["far", "clock"]} className="lpad"/>
-              <p><strong>{event["start_time"]} to {event["end_time"]}</strong></p>
-            </div>
-            <div className="col desc">
-            <div className="row">
-              <FontAwesomeIcon icon={["fas", "location-dot"]}/>
-              <p>{event["location"]}</p>
-            </div>
+        <div className='sk-meetup-event' data-embed-id='25455614'></div><script src='https://widgets.sociablekit.com/meetup-group-events/widget.js' async defer></script>
+          <h2>{event["name"]}</h2>
+          <div className="cd-row">
+            <img src={event["image"] || gameday} alt="event image"/>
+            <div className="cd-col">
+              <div className="cd-row">
+                <div className="txt-row">
+                  <FontAwesomeIcon icon={["far", "calendar"]} />
+                  <p><strong>{event["start_day"]} {event["start_date"]}</strong></p>
+                </div>
+                <div className="txt-row">
+                  <FontAwesomeIcon icon={["far", "clock"]} className="lpad"/>
+                  <p><strong>{event["start_time"]} to {event["end_time"]}</strong></p>
+                </div>
+              </div>
+              <div className="cd-col desc">
+              <div className="txt-row">
+                <FontAwesomeIcon icon={["fas", "location-dot"]}/>
+                <p>{event["location"]}</p>
+              </div>
               <p></p>
               <p>{desc}</p>
             </div>
           </div>
-
         </div>
       </div>
     </>

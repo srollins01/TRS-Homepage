@@ -27,14 +27,17 @@ function Events() {
   }
 
   const eventList = events.map((event, index) =>
-    <Card key={index} event={event} />
+     <>
+         <Card key={index} event={event} />
+         <Card key={index} event={event} />
+     </>
   );
 
   return (
   <section id="events">
     <h1><strong><em>Upcoming Events</em></strong></h1>
-    <div className="col cardspacing">
-      <div>{eventList}</div>
+    <div className="cd-col cardspacing">
+      {eventList}
     </div>
   </section>
   )
