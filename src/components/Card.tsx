@@ -21,7 +21,7 @@ function Card({event}:Props) {
   }, [event]);
 
   return (
-    <>
+    <a href="https://www.meetup.com/rpgtokyo/" target="_blank">
       <div className="card">
         <div className='sk-meetup-event' data-embed-id='25455614'></div><script src='https://widgets.sociablekit.com/meetup-group-events/widget.js' async defer></script>
           <h2>{event["name"]}</h2>
@@ -49,7 +49,7 @@ function Card({event}:Props) {
           </div>
         </div>
       </div>
-    </>
+    </a>
   )
 }
 
