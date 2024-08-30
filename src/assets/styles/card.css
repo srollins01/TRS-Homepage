@@ -12,24 +12,9 @@
   scale: 102%
 }
 
-.card h2 {
-  margin: 0 0 10px 0;
-  text-align: left;
-}
-
-.card p {
-  padding: 0px 5px;
-  margin: 0px;
-}
-
 .card .desc > p {
   padding: 0 0 0 5px !important;
   margin: 0px !important;
-}
-
-.card img {
-  height: 100px;
-  width: 150px;
 }
 
 .card > div {
@@ -40,6 +25,21 @@
 .card > div > div {
   justify-items: center;
   padding: 10px;
+}
+
+.card img {
+  height: 100px;
+  width: 150px;
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.card p {
+  padding: 0px 5px;
+  margin: 0px;
 }
 
 .lpad {

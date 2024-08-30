@@ -10,6 +10,14 @@
   border-image-repeat: repeat;
 }
 
+.topnav > a {
+  padding: 14px 20px;
+}
+
+.topnav > a > img:hover {
+  box-shadow: 0px 0px 10px #f6ba6c5e;
+}
+
 .topnav > .nav-text > a {
   float: left;
   color: #BE8C4C;
@@ -22,12 +30,4 @@
 .topnav > .nav-text > a:hover {
   color: #f1b362;
   text-shadow: 0px 0px 10px #f4ca93;
-}
-
-.topnav > a {
-  padding: 14px 20px;
-}
-
-.topnav > a > img:hover {
-  box-shadow: 0px 0px 10px #f6ba6c5e;
 }

@@ -18,17 +18,9 @@
   margin: 5px 40px;
 }
 
-.footer svg:hover, .table:hover {
-  filter: drop-shadow(0 0 8px #f5e3cc93);
-}
-
 .footer > div {
   padding: 10px;
   font-size: 40px;
-}
-
-.footer > img {
-  padding-top: 20px;
 }
 
 .footer h2 {
@@ -36,6 +28,14 @@
   margin-top: 10px;
   margin-bottom: 0px;
   color: #e1a52cd3;
+}
+
+.footer > img {
+  padding-top: 20px;
+}
+
+.footer svg:hover, .table:hover {
+  filter: drop-shadow(0 0 8px #f5e3cc93);
 }
 
 .table {

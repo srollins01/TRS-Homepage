@@ -24,6 +24,11 @@
   font-size: 16px;
 }
 
+.rsis-container {
+  border-radius: 5px !important;
+  overflow: hidden;
+}
+
 section {
   padding: 15px 70px;
   text-align: center;
@@ -48,9 +53,4 @@ section img {
 
 .slideshow {
   padding: 20px;
-}
-
-.rsis-container {
-  border-radius: 5px !important;
-  overflow: hidden;
 }
