@@ -1,22 +1,24 @@
-import { useEffect, useState } from "react";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import gameday from "/game-day-card.png"
+import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 interface Props {
   key: number,
-  event: never
+  event: Record<string, string>
 }
 
 function Card({event}:Props) {
-  const [desc, setDesc] = useState(JSON.stringify(event["description"]));
+  const [desc, setDesc] = useState("");
+
   useEffect(() => {
-    const newDesc = desc.replace(/(<([^>]+)>)/gi, "").replace(/\\n/g," ").replace(/Details/, "")
+    const initialDesc = JSON.stringify(event["description"]);
+    const newDesc = initialDesc.replace(/(<([^>]+)>)/gi, "").replace(/\\n/g," ").replace(/Details/, "");
     if (newDesc.length > 300) {
       setDesc(newDesc.substring(1, 300).trimEnd() + '...');
     } else {
       setDesc(newDesc.substring(1, newDesc.length - 2));
     }
-  }, []);
+  }, [event]);
 
   return (
     <>
@@ -24,7 +26,7 @@ function Card({event}:Props) {
       <div className='sk-meetup-event' data-embed-id='25455614'></div><script src='https://widgets.sociablekit.com/meetup-group-events/widget.js' async defer></script>
         <h2>{event["name"]}</h2>
         <div className="row">
-          <img src={event["image"]} />
+          <img src={event["image"] || gameday} alt="event image"/>
           <div className="col">
             <div className="row">
               <FontAwesomeIcon icon={["far", "calendar"]} />

@@ -1,5 +1,5 @@
-import Card from './Card'
-import { useState, useEffect } from "react";
+import Card from "./Card"
+import { useState, useEffect } from "react"
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -9,8 +9,6 @@ function Events() {
         return res.json();
       })
       .then((data) => {
-        console.log(data.events);
-        console.log(typeof data.events);
         setEvents(data.events);
       });
   }, []);
@@ -18,13 +16,13 @@ function Events() {
   if (!events) {
     return (
       <section id="events">
-      <h1><strong><em>Upcoming Events</em></strong></h1>
-      <div className="col cardspacing">
-        <div className="card">
-          <h2>No events to display</h2>
+        <h1><strong><em>Upcoming Events</em></strong></h1>
+        <div className="col cardspacing">
+          <div className="card">
+            <h2>No events to display</h2>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     )
   }
 

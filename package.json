@@ -1,7 +1,6 @@
 {
   "name": "trs-homepage",
   "private": false,
-  "homepage": "https://srollins01.github.io/TRS-Homepage/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

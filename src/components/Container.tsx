@@ -1,13 +1,17 @@
-import Events from './Events'
-import SimpleImageSlider from "react-simple-image-slider";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import titans  from "/titans.jpg"
+import groupone from "/group-pic1.jpg"
+import grouptwo from "/group-pic2.jpg"
+import questclear from "/quest-group-clear.png"
+import Events from "./Events"
+import SimpleImageSlider from "react-simple-image-slider"
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const images = [
-  { url: "/titans.jpg" },
-  { url: "/group-pic1.jpg" },
-  { url: "/group-pic2.jpg" },
+  { url: `${titans}` },
+  { url: `${groupone}` },
+  { url: `${grouptwo}` },
 ];
 
 
@@ -59,7 +63,7 @@ function Container() {
               and refreshments, Otsuka Game Day embodies the spirit of communal gaming.
             </p>
           </div>
-          <img src="/quest-group-clear.png" alt="dnd team" data-aos="fade-up"/>
+          <img src={questclear} alt="dnd team" data-aos="fade-up"/>
         </div>
       </section>
       <Events />
