@@ -3,7 +3,7 @@
 }
 
 .container {
-  background: url(/beige-bg.jpg);
+  background: url(/beige-bg.png);
   max-width: 100%;
   background-size: cover;
   text-align: center;
@@ -73,6 +73,10 @@ section img {
 }
 
 @media (max-width: 840px) {
+  .container {
+    background-position: 55% 50%;
+  }
+
   section {
     padding: 15px;
   }
