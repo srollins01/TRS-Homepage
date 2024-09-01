@@ -12,11 +12,11 @@ function Card({event}:Props) {
 
   useEffect(() => {
     const initialDesc = JSON.stringify(event["description"]);
-    const newDesc = initialDesc.replace(/(<([^>]+)>)/gi, "").replace(/\\n/g," ").replace(/Details/, "");
+    const newDesc = initialDesc.replace(/(<([^>]+)>)/gi, "").replace(/\\n/g," ").replace(/Details/, "").replace(/\//, "").replace(/\\/, "").replace(/"/, "")
     if (newDesc.length > 300) {
-      setDesc(newDesc.substring(1, 300).trimEnd() + '...');
+      setDesc(newDesc.substring(0, 300).trimEnd() + '...');
     } else {
-      setDesc(newDesc.substring(1, newDesc.length - 2));
+      setDesc(newDesc.substring(0, newDesc.length - 1));
     }
   }, [event]);
 
